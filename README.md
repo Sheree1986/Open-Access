@@ -1,5 +1,13 @@
 # README
 Deployed App link: https://openaccess.herokuapp.com/
+
+References:
+
+https://www.youtube.com/watch?v=Z0Xn1iiiEZE&t=2913s
+
+https://github.com/onemonth/omrails
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

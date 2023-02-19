@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # changed get 'pages/home' to below to reoute home page
   root 'pages#home'
   get  'about' => 'pages#about'
