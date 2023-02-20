@@ -7,6 +7,12 @@ https://www.youtube.com/watch?v=Z0Xn1iiiEZE&t=2913s
 
 https://github.com/onemonth/omrails
 
+# steps to create first admin user
+rails console
+user = User.find_by(email: "she@gmail.com")
+user.admin = true
+user.save
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
