@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
-
+  # this is to force user to sign in except for the show and index pages.
+  before_action :authenticate_user!, except: [:show, :index]
   # GET /blogs 
   def index
     @blogs = Blog.all
