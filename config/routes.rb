@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
+  as :user do
+    get "signin", to: 'devise/sessions#new'
+    delete "signout", to: 'devise/sessions#destroy'
+    get 'signup', to: 'devise/registrations#new'
+  end
+
   # changed get 'pages/home' to below to reoute home page
   root 'pages#home'
   get  'about' => 'pages#about'

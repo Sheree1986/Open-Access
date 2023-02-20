@@ -1,16 +1,18 @@
-<div class="full">
+<% if user_signed_in? %> 
     <div class="jumbotron jumbotron-home">
         <div class="container">
-            <h1>Open Access</h1>
-        </div>
-   
-
-    <div>
-        <div class="container">
-        <p>Sign Up Here</p>
-
+            <h1>Welcome to Open Access!</h1>
         </div>
     </div>
+ <% else %>  
+
+   <div class="jumbotron jumbotron-home">
+        <div class="container">
+        <p>Sign Up Here</p>
+        </div>
+    </div>
+
+
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -30,5 +32,4 @@
             </div>
         </div>
     </div>
- </div>
- </div>
+  <% end %>
