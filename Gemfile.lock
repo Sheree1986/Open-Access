@@ -242,7 +242,7 @@ GEM
     zeitwerk (2.6.7)
 
 PLATFORMS
-  x86_64-linux
+  x86_64-darwin-21
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
@@ -260,7 +260,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   spring
-  sqlite3
+  sqlite3 (~> 1.6)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
