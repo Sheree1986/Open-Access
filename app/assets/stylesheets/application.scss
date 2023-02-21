@@ -1,10 +1,8 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
+
 @import "bootstrap";
 @import "pages";
 
-body {
-    background-image: url(image_path('img-1.jpg'));
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+@import "reg";
+@import "navbar";
+
