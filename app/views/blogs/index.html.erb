@@ -3,8 +3,9 @@
     <div class="col-md-4">
       <div class="card card-block">
         <% if user_signed_in? %>
-          <h4 class="card-title">Your Account</h4>
+          <center><h4 class="card-title">Profile Link</h4>
           <p class="card-text"><%= link_to current_user.username, user_path(current_user.username) %></p>
+          </center>
         <% else %>
           <p class="card-text"><%= link_to "Sign up now!", signup_path %></p>
         <% end %>
@@ -14,14 +15,15 @@
       <% if user_signed_in? %>
         <center><%= link_to 'New Blog', new_blog_path %></center>
       <% end %>
-      <ul class="list-group">
+     <center> <ul class="list-group">
         <% @blogs.each do |blog| %>
           <%= link_to blog, class: "list-group-item list-group-item-action" do %>
-            <h5 class="list-group-item-heading"><%= blog.user.username %></h5>
+            <h5 class="list-group-item-heading"><%= blog.user.username %></h5> </center>
            
-          
-           <p class="list-group-item-text"><%= blog.image %></p>
-            <p class="list-group-item-text"><%= blog.content %></p>
+            <% if blog.image.present? %>
+              <center><%= image_tag blog.image, class: "img-fluid"%>
+            <% end %>
+            <p class="list-group-item-text"><%= blog.content %></p><center>
           <% end %>
         <% end %>
       </ul>

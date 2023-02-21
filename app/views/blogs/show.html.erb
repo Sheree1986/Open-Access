@@ -2,14 +2,16 @@
   <div class="row">
     <div class="offset-md-2 col-md-8">
       <div class="card card-block">
-        <h4 class="card-title"><%= link_to @blog.user.username, user_path(@blog.user.username) %></h4>
+        <center><h4 class="card-title">Post created by: <%= link_to @blog.user.username, user_path(@blog.user.username) %></h4></center>
            <center><%= image_tag @blog.image, class: "img-fluid" %></center>
-        <p class="card-text"><%= @blog.content %></p>
+         <center><p class="card-text"><%= @blog.content %></p>
+        <div classs= "container">
         <% if @blog.user == current_user %>
-          <%= link_to 'Edit', edit_blog_path(@blog), class: "card-link" %>
-          <%= link_to 'Delete', @blog, method: :delete, class: "card-link" %>
+          <%= link_to 'Edit', edit_blog_path(@blog), class: "card-link", class:"btn btn-success" %>
+          <%= link_to 'Delete', @blog, method: :delete, class: "card-link", class: "btn btn-danger" %>
         <% end %>
-        <%= link_to 'Back', blogs_path, class: "card-link" %>
+        <%= link_to 'Back', blogs_path, class: "card-link", class: "btn btn-primary" %>
+        </div></center>
       </div>
     </div>
   </div>

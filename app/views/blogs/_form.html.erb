@@ -14,12 +14,13 @@
 
   <div class="form-group">
     <%= form.label :image %>
-    <%= form.file_field :image %>
+    <%= form.file_field :image, class: "form-control" %>
     <%= form.label :content %>
     <%= form.text_area :content, class: "form-control" %>
   </div>
 
-
-    <%= form.submit class: "btn btn-primary" %>
+  <%= link_to 'Back', blogs_path, class: "btn btn-primary" %>
+   <center> <%= form.submit class: "btn btn-primary" %></center>
+    
   </div>
 <% end %>
