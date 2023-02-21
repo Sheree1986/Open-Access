@@ -11,5 +11,12 @@ Rails.application.routes.draw do
   # changed get 'pages/home' to below to reoute home page
   root 'pages#home'
   get  'about' => 'pages#about'
+  get  'contact' => 'pages#contact'
+  get  'autism' => 'pages#autism'
+  get  'adhd' => 'pages#adhd'
+  get  'dyslexia' => 'pages#dyslexia'
+  get  'bipolar' => 'pages#bipolar'
+  get  'tourette' => 'pages#tourette'
+  get  'neurodiversity' => 'pages#neurodiversity'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

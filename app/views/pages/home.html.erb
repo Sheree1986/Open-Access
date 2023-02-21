@@ -1,35 +1,20 @@
 <% if user_signed_in? %> 
-    <div class="jumbotron jumbotron-home">
+    
         <div class="container">
-            <h1>Welcome to Open Access!</h1>
+            <h1>Welcome <%= current_user.username =%> to Open Access!</h1>
         </div>
     </div>
  <% else %>  
 
-   <div class="jumbotron jumbotron-home">
-        <div class="container">
-        
-        </div>
-    </div>
-
-
-    <div class="container">
+    <div class="container", center>
         <div class="row">
-            <div class="col-md-4">
-                <h2>Heading2</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+            <div class="col-md-2">
+                <h2>ACCESSING NEURODIVERSITY</h2>
+                <p>Thank you for stopping by Open Access To Success. 
+        This website aims to demystifying Neurodiversity. Provide resources to education 
+        and increase access to all. Finally we want to teach inclusion and diversity in a world made of the abled.</p>
+          
             </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
-            </div>
-        </div>
+
     </div>
   <% end %>

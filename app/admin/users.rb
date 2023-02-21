@@ -14,13 +14,13 @@ ActiveAdmin.register User do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  permit_params :email, :admin
+  permit_params :email, :admin, :name, :username
 
   form do |f|
       f.semantic_errors
       f.inputs do
-          # f.input :name
-          # f.input :username
+          f.input :name
+          f.input :username
           f.input :email
           f.input :admin
       end
@@ -29,6 +29,8 @@ ActiveAdmin.register User do
 
   index do
     id_column
+    column :name
+    column :username
     column :email
     column :admin
     actions

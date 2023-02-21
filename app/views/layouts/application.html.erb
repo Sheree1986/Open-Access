@@ -4,31 +4,63 @@
     <title>Open Access</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+ 
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width">
   </head>
 
   <body>
   
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-inverse navbar-toggleable-md bg-inverse">
-      <div class="container">
-        <%= link_to "Open Access", root_path, class: "navbar-brand" %>
-        <ul class="nav navbar-nav">
-          <li class="nav-item"><%= link_to "Home", root_path, class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to "About", about_path, class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to "Contact", "#", class: "nav-link" %></li>
-         <% if user_signed_in? %>
-            <li class="nav-item float-md-right"><%= link_to "Log out", signout_path, method: :delete, class: "nav-link" %></li>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <%= link_to "Open Access", root_path, class: "navbar-brand"%>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+       <%= link_to "Home", root_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "About", about_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact", contact_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item dropdown">
+        <a  id="navbarDropdownMenuLink" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+           <%= link_to "Neurodiversity", neurodiversity_path, class: "nav-link dropdown-toggle" %>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to "ADHD", adhd_path, class: "dropdown-item" %>
+          <%= link_to "Autism", autism_path, class: "dropdown-item" %>
+          <%= link_to "Bipolar", bipolar_path, class: "dropdown-item" %>
+          <%= link_to "Dyslexia", dyslexia_path, class: "dropdown-item" %>
+          <%= link_to "Tourette", tourette_path, class: "dropdown-item" %>
+      
+        </div>
+      </li>
+      <li>
+      
+      </li>
+      <li>
+          <% if user_signed_in? %>
+          <li class="nav-item float-md-right"><%= link_to "Log out", signout_path, method: :delete, class: "nav-link" %></li>
           <% else %>
-            <li class="nav-item float-md-right"><%= link_to "Sign up", signup_path, class: "btn btn-primary" %></li>
-            <li class="nav-item float-md-right"><%= link_to "Sign in", signin_path, class: "nav-link" %></li>
+          <li class="nav-item float-md-right"><%= link_to "Sign up", signup_path, class: "btn btn-primary" %></li>
+          <li class="nav-item float-md-right"><%= link_to "Sign in", signin_path, class: "nav-link" %></li>
           <% end %>
-        </ul>
-      </div>
-    </nav>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+             
+        
 
     <!-- Flash Messages -->
     <% flash.each do |name, message| %>
