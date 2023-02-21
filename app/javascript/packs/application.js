@@ -18,3 +18,5 @@ ActiveStorage.start()
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+require("trix")
+require("@rails/actiontext")
