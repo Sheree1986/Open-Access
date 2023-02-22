@@ -12,12 +12,16 @@ https://getbootstrap.com/docs/4.0/components
 https://github.com/thoughtbot/paperclip
 https://pragmaticstudio.com/tutorials/using-active-storage-in-rails
 
+ rbenv install 3.0.1
+
+ https://snyk.io/blog/how-to-install-ruby-in-mac-os/
+
 # steps to create first admin user
 rails console
 user = User.find_by(email: "she@gmail.com")
 user.admin = true
 user.save
-
+This is done in two steps: First do yarn install. Then do bundle install. Occasionally you will need to do yarn add –check-files to update the resources managed by yarn. Occasionally you will need to do bundle update to update the resources managed by the bundler
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

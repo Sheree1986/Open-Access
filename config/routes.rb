@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :blogs do
+    resources :comments, only: [:create, :edit, :destroy, :update]
+    delete "comments", to: "comments#destroy"
+  end
   ActiveAdmin.routes(self)
   devise_for :users
   as :user do
@@ -8,7 +12,8 @@ Rails.application.routes.draw do
   end
   resources :users, only: :show, param: :username do
   end
-  resources :blogs
+
+  
 
   # changed get 'pages/home' to below to reoute home page
   root 'pages#home'
