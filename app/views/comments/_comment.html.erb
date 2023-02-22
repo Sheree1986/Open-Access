@@ -2,8 +2,12 @@
 <strong> <%= comment.username %></strong>
 <%= comment.content %>
 <div class="comment-admin">
+ <% if @blog.user == current_user %>
   | <%= link_to "Edit", edit_blog_comment_path(@blog, comment), class:"btn btn-success" %> |
   <%= link_to "Delete", blog_comment_path(@blog, comment), method: :delete, class: "btn btn-danger" %> |
+<% end %>
+  | <%= link_to "Show", blog_comment_path(@blog, comment), method: :show, class:"btn btn-success" %> |
 </div>
 </div>
 </div></center>
+ 

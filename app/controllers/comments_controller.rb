@@ -1,5 +1,9 @@
 class CommentsController < ApplicationController
     before_action :set_blog
+    def show
+      @comment = Comment.find(params[:id])
+    end
+    
     def create
       @comment = @blog.comments.create(comment_params)
       redirect_to @blog
