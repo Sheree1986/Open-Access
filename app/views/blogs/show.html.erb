@@ -18,11 +18,14 @@
             <h1>Comments</h1>
             <%= render @blog.comments %>
           
-          <h2>Add a Comment</h2>
+          <center><h2>Add a Comment</h2></center>
           <%= render partial: "comments/form", locals: {comment: @blog.comments.new} %>
         </div> </center>
 
-        |<%= link_to 'Back', blogs_path, class: "btn btn-primary"%> |
+        
+        
+<center>
+        |<%= link_to 'Back', blogs_path, class: "btn btn-primary"%> |</center>
 
         <% end %>
            

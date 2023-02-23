@@ -1,15 +1,38 @@
+<center>
 <%= form_for [@blog, comment] do |f| %>
+
+
   <div class="field">
-    <%= f.label :username %>
-    <%= f.text_field :username  %>
+  
+      
+    <% if user_signed_in? %>
+  <h4> Commenter's <%= f.label :username %> :
+<%= @blog.user.username or f.text :username %>
+    </h4>
   </div>
 
   <div class="field">
-    <%= f.label :content, "Comment" %>
+
     <%= f.text_area :content %>
   </div>
 
   <div class="actions">
     <%= f.submit %>
   </div>
-<% end %>
+
+<% else %>
+  <%= f.label :username %> :
+  <%= f.text_field :username  %>
+    </h4>
+  </div>
+
+  <div class="field">
+    <%= f.label :comment %> :
+    <%= f.text_area :content %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  <% end %>
+<% end %></center>
