@@ -2,6 +2,7 @@ class CommentsController < ApplicationController
     before_action :set_blog
     def show
       @comment = Comment.find(params[:id])
+     
     end
     
     def create

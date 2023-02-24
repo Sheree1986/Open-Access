@@ -9,6 +9,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1 
   def show
     @blog = Blog.find(params[:id])
+  
   end
 
   # GET /blogs/new

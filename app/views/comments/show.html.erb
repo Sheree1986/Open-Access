@@ -1,0 +1,23 @@
+
+ <center>
+          <div id="comments">
+          
+            <% if @blog.user %>
+            <h1>Comments</h1>
+            <%= render @blog.comments %></center>
+          
+         <center><h2>Add a Comment</h2></center>
+          <%= render partial: "comments/form", locals: {comment: @blog.comments.new} %>
+        </div> </center>
+
+        
+        
+<center>
+        |<%= link_to 'Back', blogs_path, class: "btn btn-primary"%> |</center>
+
+        <% end %>
+           
+</div>
+
+</center>
+

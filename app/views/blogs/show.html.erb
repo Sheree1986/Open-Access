@@ -5,20 +5,26 @@
         <center><h4 class="card-title">Post created by: <%= link_to @blog.user.username, user_path(@blog.user.username) %></h4></center>
            <center><%= image_tag @blog.image, class: "img-fluid" %></center>
          <center><p class="card-text"><%= @blog.content %></p>
-        <div classs= "container">
+      
         <% if @blog.user == current_user %>
           | <%= link_to 'Back', blogs_path, class: "btn btn-primary"%> |
           <%= link_to 'Edit', edit_blog_path(@blog), class: "card-link", class:"btn btn-success" %> |
           <%= link_to 'Delete', @blog, method: :delete, class: "card-link", class: "btn btn-danger" %> |
 
           <% end %>
+            </div>
+             </div>
+          </div>
+        </div>
+        
+ <center>
           <div id="comments">
           
             <% if @blog.user %>
             <h1>Comments</h1>
-            <%= render @blog.comments %>
+            <%= render @blog.comments %></center>
           
-          <center><h2>Add a Comment</h2></center>
+         <center><h2>Add a Comment</h2></center>
           <%= render partial: "comments/form", locals: {comment: @blog.comments.new} %>
         </div> </center>
 
@@ -29,12 +35,9 @@
 
         <% end %>
            
-
-        </div></center>
-      </div>
-    </div>
-  </div>
 </div>
+
+</center>
 
 
 

@@ -3,7 +3,7 @@
     <div class="col-md-4">
       <div class="card card-block">
         <% if user_signed_in? %>
-          <center><h4 class="card-title">Community Blog Area</h4>
+          <center><h4 class="card-title">Profile Link</h4>
           <p class="card-text"><%= link_to current_user.username.capitalize, user_path(current_user.username) %></p>
           </center>
         <% else %>
@@ -18,7 +18,7 @@
      <center> <ul class="list-group">
         <% @blogs.each do |blog| %>
           <%= link_to blog, class: "list-group-item list-group-item-action" do %>
-            <h5 class="list-group-item-heading"><%= blog.user.username.capitalize %></h5> </center>
+            <h5 class="list-group-item-heading"><%= blog.user_username.capitalize %></h5> </center>
            
             <% if blog.image.present? %>
               <center><%= image_tag blog.image, class: "img-fluid"%>

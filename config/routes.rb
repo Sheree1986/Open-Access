@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   resources :blogs do
-    resources :comments, only: [:create, :edit, :destroy, :update]
-    delete "comments", to: "comments#destroy"
-    get "comments", to: "comments#show"
+    resources :comments, only: [:create, :destroy, :update, :edit, :show]
+   
+    get "comments", to: "blog#show"
   end
   
   ActiveAdmin.routes(self)
@@ -14,6 +14,7 @@ Rails.application.routes.draw do
                                       
   end
   resources :users, only: :show, param: :username do
+
   
   end
                                                                   
@@ -21,7 +22,6 @@ Rails.application.routes.draw do
 
   # changed get 'pages/home' to below to reoute home page
   root 'pages#home'
- 
   get  'contact', to: 'pages#contact'
   get  'neurodiversity', to: 'pages#neurodiversity'
   get  'autism', to: 'pages#autism'
