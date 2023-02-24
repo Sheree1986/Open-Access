@@ -44,7 +44,7 @@ class BlogsController < ApplicationController
     end
   
 
-  # DELETE /blogs/1 
+  # DELETE /blogs/1  d
   def destroy
     @blog = current_user.blogs.find(params[:id])
     @blog.destroy
