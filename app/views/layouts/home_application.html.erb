@@ -3,7 +3,7 @@
 <% if user_signed_in? %> 
     
         <div class="container">
-            <h1>Welcome <%= current_user.username =%> to Open Access!</h1>
+            <h1>Welcome <%= current_user.username.capitalize =%> to Open Access!</h1>
         </div>
     </div>
  <% else %>  
