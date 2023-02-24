@@ -6,7 +6,7 @@
   
       
     <% if user_signed_in? %>
-  <h4> Commenter's <%= f.label :username %> :
+  <h4 id="cname"> Commenter's <%= f.label :username %> :
 <%= @blog.user.username or f.text :username %>
     </h4>
   </div>

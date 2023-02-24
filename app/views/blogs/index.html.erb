@@ -7,7 +7,7 @@
           <p class="card-text"><%= link_to current_user.username.capitalize, user_path(current_user.username) %></p>
           </center>
         <% else %>
-          <p class="card-text"><%= link_to "Sign up now!", signup_path %></p>
+          <p class="card-text"><%= link_to "Sign up", signup_path %> | <%= link_to "Sign in", signin_path %></p>
         <% end %>
       </div>
     </div>

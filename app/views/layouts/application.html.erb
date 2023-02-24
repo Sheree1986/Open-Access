@@ -28,9 +28,7 @@
          <li class="nav-item">
         <%= link_to "Blog", blogs_path, class: "nav-link" %>
       </li>
-       <li class="nav-item active">
-      <%= link_to "Profile", contact_path, class: "nav-link" %></li>
-      <li class="nav-item">
+
         <%= link_to "Contact", contact_path, class: "nav-link" %>
       </li>
   
@@ -52,6 +50,9 @@
       </li>
       <li>
           <% if user_signed_in? %>
+                 <li class="nav-item active">
+      <%= link_to "Profile", user_path(current_user.username) , class: "nav-link" %></li>
+      <li class="nav-item">
           <li class="nav-item float-md-right"><%= link_to "Log out", signout_path, method: :delete, class: "nav-link" %></li>
           <% else %>
           <li class="nav-item float-md-right"><%= link_to "Sign up", signup_path, class: "btn btn-primary" %></li>
