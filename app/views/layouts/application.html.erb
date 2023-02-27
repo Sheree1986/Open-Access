@@ -37,6 +37,7 @@
            Neurodiversity
           </a>
           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="<%= neurodiversity_path %>"> Neurodiversity</a></li>
             <li><a class="dropdown-item" href="<%= adhd_path %>">ADHD</a></li>
             <li><a class="dropdown-item" href="<%= autism_path %>">Autism</a></li>
             <li><a class="dropdown-item" href="<%= bipolar_path %>">Bipolar</a></li>
@@ -44,7 +45,24 @@
             <li><a class="dropdown-item" href="<%= tourette_path %>">Tourette</a></li>
             
           </ul>
+          
+          <% if user_signed_in? %>
+   <li class="nav-item">
+          <a class="nav-link" href="<%= user_path(current_user.username) %>">Profile</a>
         </li>
+        <li class="nav-item">
+          <li class="nav-item float-md-right"><%= link_to "Log out", signout_path, method: :delete, class: "nav-link" %></li>
+        </li>
+        <% else %>
+       <li class="nav-item">
+          <a class="nav-link" href="<%= signup_path %>">Sign up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<%=signin_path%>">Sign in</a>
+          <% end %>
+        </li>
+        
+      </li>
       </ul>
     </div>
   </div>
