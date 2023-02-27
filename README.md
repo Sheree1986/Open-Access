@@ -63,13 +63,21 @@ Occasionally you will need to do bundle update to update the resources managed b
    ✈️ Implement the views for the CRUD operations for each model:
   
    ✈️ Index – view to list all the records for that model
+   
    ✈️ New – form to create a new record
+   
    ✈️ Edit – form to update an existing record
+   
    ✈️ Show – view to see a specific record
+   
    ✈️ Form controls should include several types of input fields, including but not limited to inputs,
+   
    textareas, dropdowns, checkboxes, and radio buttons. There should be some links to connect the application together
+   
    ✈️ Links or buttons to help the users navigate the application
+   
    ✈️ Style your application by adding CSS; the use of Bootstrap controls, such as Navbars, is highly recommended
+   
    ✈️ The application should be attractive with inclusion of images, color, fonts and other CSS styling
 
 </details> 
@@ -94,6 +102,7 @@ Occasionally you will need to do bundle update to update the resources managed b
 # Deployed App links: 
 
   ✈️ https://openaccess.herokuapp.com/ 
+  
   ✈️ https://rails-cpuv.onrender.com/
 
 
@@ -102,26 +111,52 @@ Occasionally you will need to do bundle update to update the resources managed b
 # References:
 <details>
   ✈️ https://www.youtube.com/watch?v=Z0Xn1iiiEZE&t=2913s
+   
 
   ✈️ https://github.com/onemonth/omrails
+   
 
   ✈️ https://stackoverflow.com/questions/13865610/css-background-image-on-home-page-only-in-a-rails-app
+   
+   
   ✈️ https://getbootstrap.com/docs/4.0/components
+   
+   
   ✈️ https://github.com/thoughtbot/paperclip
+   
+   
   ✈️ https://pragmaticstudio.com/tutorials/using-active-storage-in-rails
+   
+   
   ✈️ https://devcenter.heroku.com/articles/sqlite3
+   
+   
   ✈️ https://www.railscoder.com/articles/adding-contact-forms-in-rails-7-with-mail_form-gem
+   
+   
   ✈️ rbenv install 3.0.1 
+   
+   
   ✈️ https://snyk.io/blog/how-to-install-ruby-in-mac-os/
+   
 
   ✈️ https://stackoverflow.com/questions/54277392/rails-activesupportmessageencryptorinvalidmessage
+   
 
 # steps to create first admin user
 
   ✈️ https://stackoverflow.com/questions/6497781/making-existing-user-an-admin-on-heroku
+   
+   
   ✈️ rails console
+   
+   
   ✈️ user = User.find_by(email: "she@gmail.com")
+   
+   
   ✈️ user.admin = true
+   
+   
   ✈️ user.save
 
 
