@@ -11,6 +11,7 @@ https://stackoverflow.com/questions/13865610/css-background-image-on-home-page-o
 https://getbootstrap.com/docs/4.0/components
 https://github.com/thoughtbot/paperclip
 https://pragmaticstudio.com/tutorials/using-active-storage-in-rails
+https://devcenter.heroku.com/articles/sqlite3
 
  rbenv install 3.0.1
 
