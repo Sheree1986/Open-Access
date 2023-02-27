@@ -27,6 +27,7 @@ gem 'activeadmin', '~> 2.13', '>= 2.13.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'image_processing', "~> 1.2"
+gem 'mail_form', '~> 1.10'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -13,10 +13,11 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-//= require jquery
-//= require jquery_ujs
+
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require jquery
+//= require jquery_ujs
 //= require_tree .
 require("trix")
 require("@rails/actiontext")

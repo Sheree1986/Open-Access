@@ -17,12 +17,13 @@ Rails.application.routes.draw do
 
   
   end
-                                                                  
+            
+  resources :contacts, only: [:new, :create ]
+  get '/contacts', to: 'contacts#new', as: 'contact'
+  get 'contacts/sent'
   
-
   # changed get 'pages/home' to below to reoute home page
   root 'pages#home'
-  get  'contact', to: 'pages#contact'
   get  'neurodiversity', to: 'pages#neurodiversity'
   get  'autism', to: 'pages#autism'
   get  'adhd', to: 'pages#adhd'

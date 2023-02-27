@@ -13,6 +13,8 @@ https://github.com/thoughtbot/paperclip
 https://pragmaticstudio.com/tutorials/using-active-storage-in-rails
 https://devcenter.heroku.com/articles/sqlite3
 
+https://www.railscoder.com/articles/adding-contact-forms-in-rails-7-with-mail_form-gem
+
  rbenv install 3.0.1
 
  https://snyk.io/blog/how-to-install-ruby-in-mac-os/

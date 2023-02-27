@@ -1,0 +1,45 @@
+
+    <h1 class="text-4xl text-center">Open Access Contact Form</h1>
+    <hr>
+
+
+    <%= form_for @contact do |form| %>
+
+    <% if @contact.errors.any? %>
+        <div id="error_explanation">
+            <div><%= pluralize(@contact.errors.count, "error") %> prohibited this page from being saved:</div>
+
+            <ul>
+                <% @contact.errors.each do |error| %>
+                    <li ><%= error.full_message %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+
+<div class="form-group">
+    <div class="field">
+        <%= form.label :name %>
+        <%= form.text_field :name, class:"form-control" %>
+    </div>
+
+    <div class="field">
+        <%= form.label :email %>
+        <%= form.email_field :email, class:"form-control" %>
+    </div>
+
+    <div class="field">
+        <%= form.label :message %>
+        <%= form.text_area :message, class:"form-control" %>
+    </div>
+
+  
+<center>
+    <div class="actions">
+        <%= form.submit "Send Message", class: "btn btn-primary" %>
+    </div>
+    <% end %>
+</div>
+</div>
+</center>

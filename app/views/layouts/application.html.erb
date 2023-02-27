@@ -29,9 +29,10 @@
         <li class="nav-item">
           <a class="nav-link" href="<%= blogs_path %>">Blog</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<%=contact_path%>">Contact</a>
-        </li>
+      
+          
+          <li class="nav-item float-md-right"><%= link_to "Contact", contacts_path, class: "nav-link" %></li>
+       
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Neurodiversity
