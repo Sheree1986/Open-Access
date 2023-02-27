@@ -1,5 +1,6 @@
 # Open Access
-Thank you for stopping by Open Access To Success. This website aims to demystifying Neurodiversity. Provide resources to education and increase access to all. Finally we want to teach inclusion and diversity in a world made for the abled
+Thank you for stopping by Open Access To Success. This website aims to demystifying Neurodiversity. 
+Provide resources to education and increase access to all. Finally we want to teach inclusion and diversity in a world made for the abled
 
 # Features
 
@@ -19,7 +20,9 @@ git clone https://github.com/Sheree1986/Open-Access.git
 
 
 ```
-This is done in two steps: First do yarn install. Then do bundle install. Occasionally you will need to do yarn add –check-files to update the resources managed by yarn. Occasionally you will need to do bundle update to update the resources managed by the bundler
+This is done in two steps: First do yarn install. Then do bundle install. 
+Occasionally you will need to do yarn add –check-files to update the resources managed by yarn. 
+Occasionally you will need to do bundle update to update the resources managed by the bundler.
 
 ```
 
@@ -42,7 +45,8 @@ This is done in two steps: First do yarn install. Then do bundle install. Occasi
 
    ✈️ Model attributes should use different data types (integer, string, boolean, etc)
 
-   ✈️ At least one association is required, one-to-many or many-to-many (Please don’t make this too simple.  More models, nested associations, or many to many associations are encouraged.) 
+   ✈️ At least one association is required, one-to-many or many-to-many (Please don’t make this too simple.  
+   More models, nested associations, or many to many associations are encouraged.) 
 
    ✈️ Validation of your attributes to prevent the creation of invalid records
 
@@ -62,7 +66,8 @@ This is done in two steps: First do yarn install. Then do bundle install. Occasi
    ✈️ New – form to create a new record
    ✈️ Edit – form to update an existing record
    ✈️ Show – view to see a specific record
-   ✈️ Form controls should include several types of input fields, including but not limited to inputs, textareas, dropdowns, checkboxes, and radio buttons. There should be some links to connect the application together
+   ✈️ Form controls should include several types of input fields, including but not limited to inputs,
+   textareas, dropdowns, checkboxes, and radio buttons. There should be some links to connect the application together
    ✈️ Links or buttons to help the users navigate the application
    ✈️ Style your application by adding CSS; the use of Bootstrap controls, such as Navbars, is highly recommended
    ✈️ The application should be attractive with inclusion of images, color, fonts and other CSS styling
@@ -79,12 +84,17 @@ This is done in two steps: First do yarn install. Then do bundle install. Occasi
 # Bonus Goals 
 <details>
 
-  ✈️ Do something extra.  This could be the implementation of a more complicated data model, or the use of gems such as Devise for authentication or Active Storage for file storage, or implementing a REST API with a front end — your choice, whatever fits for application
+  ✈️ Do something extra.  This could be the implementation of a more complicated data model, 
+  or the use of gems such as Devise for authentication or Active Storage for file storage, 
+  or implementing a REST API with a front end — your choice, whatever fits for application
  
 
 </details>
 
-Deployed App link: https://openaccess.herokuapp.com/ or https://rails-cpuv.onrender.com/
+# Deployed App links: 
+
+  ✈️ https://openaccess.herokuapp.com/ 
+  ✈️ https://rails-cpuv.onrender.com/
 
 
 
