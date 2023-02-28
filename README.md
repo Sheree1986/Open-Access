@@ -39,20 +39,20 @@ Occasionally you will need to do bundle update to update the resources managed b
 # Models & Controllers
 <details>
 
-   ✈️ Create a full Rails application from scratch using ActiveRecord and a database
+    ♾ Create a full Rails application from scratch using ActiveRecord and a database
 
-   ✈️ At least two ActiveRecord models
+    ♾ At least two ActiveRecord models
 
-   ✈️ Model attributes should use different data types (integer, string, boolean, etc)
+    ♾ Model attributes should use different data types (integer, string, boolean, etc)
 
-   ✈️ At least one association is required, one-to-many or many-to-many (Please don’t make this too simple.  
+    ♾ At least one association is required, one-to-many or many-to-many (Please don’t make this too simple.  
    More models, nested associations, or many to many associations are encouraged.) 
 
-   ✈️ Validation of your attributes to prevent the creation of invalid records
+    ♾ Validation of your attributes to prevent the creation of invalid records
 
-   ✈️ Implement all the CRUD (create, read, update, delete) operations for your models in your controllers
+    ♾ Implement all the CRUD (create, read, update, delete) operations for your models in your controllers
 
-   ✈️ Bonus: implement some non-CRUD operations (like sorting, paging, etc.)
+    ♾ Bonus: implement some non-CRUD operations (like sorting, paging, etc.)
 
 </details>
 
@@ -60,39 +60,39 @@ Occasionally you will need to do bundle update to update the resources managed b
 # Views
 <details>
   
-   ✈️ Implement the views for the CRUD operations for each model:
+    ♾ Implement the views for the CRUD operations for each model:
   
-   ✈️ Index – view to list all the records for that model
+    ♾ Index – view to list all the records for that model
    
-   ✈️ New – form to create a new record
+    ♾ New – form to create a new record
    
-   ✈️ Edit – form to update an existing record
+    ♾ Edit – form to update an existing record
    
-   ✈️ Show – view to see a specific record
+    ♾ Show – view to see a specific record
    
-   ✈️ Form controls should include several types of input fields, including but not limited to inputs,
+    ♾ Form controls should include several types of input fields, including but not limited to inputs,
    
    textareas, dropdowns, checkboxes, and radio buttons. There should be some links to connect the application together
    
-   ✈️ Links or buttons to help the users navigate the application
+    ♾ Links or buttons to help the users navigate the application
    
-   ✈️ Style your application by adding CSS; the use of Bootstrap controls, such as Navbars, is highly recommended
+    ♾ Style your application by adding CSS; the use of Bootstrap controls, such as Navbars, is highly recommended
    
-   ✈️ The application should be attractive with inclusion of images, color, fonts and other CSS styling
+    ♾ The application should be attractive with inclusion of images, color, fonts and other CSS styling
 
 </details> 
 
 # Testing
 <details>
  
-  ✈️ Include at least some minimal testing using Rspec for some of the CRUD operations
+   ♾ Include at least some minimal testing using Rspec for some of the CRUD operations
  
 </details>
 
 # Bonus Goals 
 <details>
 
-  ✈️ Do something extra.  This could be the implementation of a more complicated data model, 
+   ♾ Do something extra.  This could be the implementation of a more complicated data model, 
   or the use of gems such as Devise for authentication or Active Storage for file storage, 
   or implementing a REST API with a front end — your choice, whatever fits for application
  
@@ -101,63 +101,60 @@ Occasionally you will need to do bundle update to update the resources managed b
 
 # Deployed App links: 
 
-  ✈️ https://openaccess.herokuapp.com/ 
+   ♾ https://openaccess.herokuapp.com/ 
   
-  ✈️ https://rails-cpuv.onrender.com/
-
-
 
 
 # References:
 <details>
-  ✈️ https://www.youtube.com/watch?v=Z0Xn1iiiEZE&t=2913s
+   ♾ https://www.youtube.com/watch?v=Z0Xn1iiiEZE&t=2913s
    
 
-  ✈️ https://github.com/onemonth/omrails
+   ♾ https://github.com/onemonth/omrails
    
 
-  ✈️ https://stackoverflow.com/questions/13865610/css-background-image-on-home-page-only-in-a-rails-app
+   ♾ https://stackoverflow.com/questions/13865610/css-background-image-on-home-page-only-in-a-rails-app
    
    
-  ✈️ https://getbootstrap.com/docs/4.0/components
+   ♾ https://getbootstrap.com/docs/4.0/components
    
    
-  ✈️ https://github.com/thoughtbot/paperclip
+   ♾ https://github.com/thoughtbot/paperclip
    
    
-  ✈️ https://pragmaticstudio.com/tutorials/using-active-storage-in-rails
+   ♾ https://pragmaticstudio.com/tutorials/using-active-storage-in-rails
    
    
-  ✈️ https://devcenter.heroku.com/articles/sqlite3
+   ♾ https://devcenter.heroku.com/articles/sqlite3
    
    
-  ✈️ https://www.railscoder.com/articles/adding-contact-forms-in-rails-7-with-mail_form-gem
+   ♾ https://www.railscoder.com/articles/adding-contact-forms-in-rails-7-with-mail_form-gem
    
    
-  ✈️ rbenv install 3.0.1 
+   ♾ rbenv install 3.0.1 
    
    
-  ✈️ https://snyk.io/blog/how-to-install-ruby-in-mac-os/
+   ♾ https://snyk.io/blog/how-to-install-ruby-in-mac-os/
    
 
-  ✈️ https://stackoverflow.com/questions/54277392/rails-activesupportmessageencryptorinvalidmessage
+   ♾ https://stackoverflow.com/questions/54277392/rails-activesupportmessageencryptorinvalidmessage
    
 
 # steps to create first admin user
 
-  ✈️ https://stackoverflow.com/questions/6497781/making-existing-user-an-admin-on-heroku
+   ♾ https://stackoverflow.com/questions/6497781/making-existing-user-an-admin-on-heroku
    
    
-  ✈️ rails console
+   ♾ rails console
    
    
-  ✈️ user = User.find_by(email: "she@gmail.com")
+   ♾ user = User.find_by(email: "she@gmail.com")
    
    
-  ✈️ user.admin = true
+   ♾ user.admin = true
    
    
-  ✈️ user.save
+   ♾ user.save
 
 
 </details>
